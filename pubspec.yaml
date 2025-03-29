@@ -70,8 +70,15 @@ flutter:
       - assets/images/nations/liyue.webp
       - assets/images/nations/inazuma.webp
       - assets/images/nations/sumeru.webp
-      - assets/images/nations/fortain.webp
+      - assets/images/nations/fortaine.webp
       - assets/images/nations/natlan.webp
+
+      - assets/images/main_city/mondstadt.webp
+      - assets/images/main_city/liyue.webp
+      - assets/images/main_city/inazuma.webp
+      - assets/images/main_city/sumeru.webp
+      - assets/images/main_city/fortaine.webp
+      - assets/images/main_city/natlan.webp
 
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg

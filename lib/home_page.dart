@@ -15,7 +15,7 @@ class _HomePageState extends  State<HomePage>{
     Nation(name: '璃月',flag: 'assets/images/nations/liyue.webp',god:'鍾離',nationElement: '岩',nationStory: ''),
     Nation(name: '稻妻',flag: 'assets/images/nations/inazuma.webp',god:'雷電影',nationElement: '雷',nationStory: ''),
     Nation(name: '須彌',flag: 'assets/images/nations/sumeru.webp',god:'納西妲',nationElement: '草',nationStory: ''),
-    Nation(name: '楓丹',flag: 'assets/images/nations/fortain.webp',god:'無(前任:芙卡洛斯)',nationElement: '水',nationStory: ''),
+    Nation(name: '楓丹',flag: 'assets/images/nations/fortaine.webp',god:'無(前任:芙卡洛斯)',nationElement: '水',nationStory: ''),
     Nation(name: '納塔',flag: 'assets/images/nations/natlan.webp',god:'瑪薇卡',nationElement: '火',nationStory: ''),
   ];
 
