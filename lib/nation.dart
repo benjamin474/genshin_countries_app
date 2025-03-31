@@ -4,6 +4,7 @@ class Nation {
   final String god;
   final String nationElement;
   final String nationStory;
+  final String mainCity;
 
   const Nation({
     required this.name,
@@ -11,5 +12,6 @@ class Nation {
     required this.god,
     required this.nationElement,
     required this.nationStory,
+    required this.mainCity,
   });
 }

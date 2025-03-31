@@ -17,10 +17,8 @@ class NationTile extends StatelessWidget{
         Text('Element:'),
         Image(image: AssetImage(nation.nationElement)),
         Text('God'),
-        Image(image: AssetImage(nation.god)),
-        Text('Story'),
-        Image(image: AssetImage(nation.nationStory)),
+        Text(nation.god),
       ],
-    )
+    );
   }
 }
