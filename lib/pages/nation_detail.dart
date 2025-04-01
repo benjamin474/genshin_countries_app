@@ -1,5 +1,6 @@
 import 'package:ebook_app/nation.dart';
 import 'package:ebook_app/pages/subpages/area_page.dart';
+import 'package:ebook_app/pages/subpages/festival.dart';
 import 'package:ebook_app/pages/subpages/story_page.dart';
 import 'package:flutter/material.dart';
 
@@ -18,7 +19,7 @@ class _NationDetailState extends State<NationDetail> {
     return Scaffold(
       appBar: AppBar(title: Text(widget.nation.name)),
       body: DefaultTabController(
-        length: 4,
+        length: 3,
         child: Column(
           children: [
             Image.asset(widget.nation.flag),
@@ -43,10 +44,7 @@ class _NationDetailState extends State<NationDetail> {
                   // 地區
                   AreaPage(nation: widget.nation),
                   // 節日
-                  Container(
-                    color: Colors.lightBlue,
-                    child: Text('Hello world3'),
-                  ),
+                  Festival(nation: widget.nation),
                 ],
               ),
             ),
