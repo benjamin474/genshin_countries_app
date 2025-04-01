@@ -1,8 +1,7 @@
-import 'package:ebook_app/nation_card.dart';
-import 'package:ebook_app/nation_detail.dart';
-import 'package:ebook_app/nation_tile.dart';
+import 'package:ebook_app/items/nation_card.dart';
+import 'package:ebook_app/pages/nation_detail.dart';
 import 'package:flutter/material.dart';
-import 'package:ebook_app/nation_data.dart';
+import 'package:ebook_app/items/nation_data.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -25,7 +24,7 @@ class _HomePageState extends State<HomePage> {
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage('assets/images/genshin.jpg'),
+            image: AssetImage('assets/images/elements/genshin.webp'),
             fit: BoxFit.cover,
           ),
         ),
