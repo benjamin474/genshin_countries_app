@@ -24,7 +24,9 @@ class _NationDetailState extends State<NationDetail> {
       },
       child: AnimatedContainer(
         duration: const Duration()
+      
       )
+      
     );
   }
   
