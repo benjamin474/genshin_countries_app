@@ -1,5 +1,6 @@
 import 'package:ebook_app/nation.dart';
 import 'package:ebook_app/items/nation_data.dart';
+import 'package:ebook_app/pages/subpages/area_page.dart';
 import 'package:ebook_app/pages/subpages/story_page.dart';
 import 'package:flutter/material.dart';
 
@@ -27,8 +28,8 @@ class _NationDetailState extends State<NationDetail> {
             Container(
               color: Colors.white,
               child: TabBar(
-                tabs: const [
-                  Tab(text: "國家故事"),
+                tabs: [
+                  Tab(text: "關於${widget.nation.name}"),
                   Tab(text: "地區"),
                   Tab(text: "歷代神明"),
                   Tab(text: "節日"),
@@ -43,19 +44,15 @@ class _NationDetailState extends State<NationDetail> {
                 children: [
                   // 故事
                   StoryPage(nation: widget.nation),
-
-                // 節日
-                  Container(
-                    color: Colors.lightBlue,
-                    child: Text('Hello world'),
-                  ),
-                // 故事
+                  // 地區
+                  AreaPage(nation: widget.nation),
+                  // 故事
                   Container(
                     color: Colors.lightBlue,
                     child: Text('Hello world2'),
                   ),
-                
-                 Container(
+
+                  Container(
                     color: Colors.lightBlue,
                     child: Text('Hello world3'),
                   ),
