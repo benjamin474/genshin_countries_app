@@ -1,5 +1,4 @@
 import 'package:ebook_app/items/nation_card.dart';
-import 'package:ebook_app/pages/nation_detail.dart';
 import 'package:flutter/material.dart';
 import 'package:ebook_app/items/nation_data.dart';
 
@@ -35,9 +34,6 @@ class _HomePageState extends State<HomePage> {
           itemBuilder: (context, index) {
             return Card(child: NationCard(nation: nations[index]));
           },
-          // separatorBuilder: (context, index) {
-          //   return const Divider();
-          // },
         ),
       ),
     );

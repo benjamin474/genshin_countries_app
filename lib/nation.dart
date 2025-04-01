@@ -5,7 +5,8 @@ class Nation {
   final String nationElement;
   final String mainCity;
   final String nationStory;
-  final List<String> gods;
+  final List<String> areaNames;
+  final List<String> areaImages;
   final List<String> festivals;
 
   const Nation({
@@ -15,7 +16,8 @@ class Nation {
     required this.nationElement,
     required this.mainCity,
     required this.nationStory,
-    required this.gods,
+    required this.areaNames,
+    required this.areaImages,
     required this.festivals,
   });
 }
