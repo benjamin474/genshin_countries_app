@@ -28,31 +28,25 @@ class _NationCardState extends State<NationCard> {
       },
       child: AnimatedContainer(
         duration: const Duration(milliseconds: 200),
-        // color: _isHovering ? Colors.yellow : Colors.lightBlue,
-        padding: const EdgeInsets.all(8.0),
-        margin: const EdgeInsets.only(bottom: 10),
-        height: _isHovering ? 220 : 200,
-
+        alignment: Alignment.center,
+        transform: Matrix4.identity()
+          ..scale(_isHovering ? 1.1 : 1.0),
         decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(10),
           image: DecorationImage(
             image: AssetImage(widget.nation.mainCity),
             fit: BoxFit.cover,
           ),
-          borderRadius: BorderRadius.circular(20),
-          boxShadow: [
-            BoxShadow(
-              color: Colors.grey,
-              blurRadius: 10,
-              spreadRadius: 5,
-              offset: Offset(3, 3),
-            ),
-          ],
         ),
-        child: Column(
-          children: [
-            Text(widget.nation.name, style: TextStyle(color: Colors.white)),
-            Image(image: AssetImage(widget.nation.flag)),
-          ],
+        child: Container(
+          padding: const EdgeInsets.all(8.0),
+          margin: const EdgeInsets.only(bottom: 10),
+          child: Column(
+            children: [
+              Text(widget.nation.name, style: TextStyle(color: Colors.white)),
+              Image(image: AssetImage(widget.nation.flag)),
+            ],
+          ),
         ),
       ),
     );

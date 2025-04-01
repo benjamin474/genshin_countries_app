@@ -4,7 +4,7 @@ const List<Nation> nations = [
     Nation(
       name: '蒙德',
       flag: 'assets/images/nations/mondstadt.webp',
-      god: '溫迪',
+      god: '巴巴托斯',
       nationElement: 'assets/images/elements/anemo.webp',
       nationStory: '',
       mainCity: 'assets/images/main_city/mondstadt.webp',
@@ -12,7 +12,7 @@ const List<Nation> nations = [
     Nation(
       name: '璃月',
       flag: 'assets/images/nations/liyue.webp',
-      god: '鍾離',
+      god: '摩拉克斯',
       nationElement: 'assets/images/elements/geo.webp',
       nationStory: '',
       mainCity: 'assets/images/main_city/liyue.webp',
@@ -20,7 +20,7 @@ const List<Nation> nations = [
     Nation(
       name: '稻妻',
       flag: 'assets/images/nations/inazuma.webp',
-      god: '雷電影',
+      god: '巴爾澤布',
       nationElement: 'assets/images/elements/electro.webp',
       nationStory: '',
       mainCity: 'assets/images/main_city/inazuma.webp',
@@ -28,7 +28,7 @@ const List<Nation> nations = [
     Nation(
       name: '須彌',
       flag: 'assets/images/nations/sumeru.webp',
-      god: '納西妲',
+      god: '布耶爾',
       nationElement: 'assets/images/elements/dendro.webp',
       nationStory: '',
       mainCity: 'assets/images/main_city/sumeru.webp',
@@ -44,7 +44,7 @@ const List<Nation> nations = [
     Nation(
       name: '納塔',
       flag: 'assets/images/nations/natlan.webp',
-      god: '瑪薇卡',
+      god: '赫布里穆',
       nationElement: 'assets/images/elements/pyro.webp',
       nationStory: '',
       mainCity: 'assets/images/main_city/natlan.webp',

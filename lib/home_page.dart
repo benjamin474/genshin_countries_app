@@ -20,9 +20,10 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext build) {
     return Scaffold(
       appBar: AppBar(title: const Text('原神六國導覽', textAlign: TextAlign.center)),
-
+      
       body: ListView.builder(
         padding: const EdgeInsets.all(100),
+
         itemCount: nations.length,
         itemBuilder: (context, index) {
           return Card(
