@@ -1,4 +1,5 @@
 import 'package:ebook_app/nation.dart';
+import 'package:ebook_app/pages/nation_detail.dart';
 import 'package:flutter/material.dart';
 
 class NationCard extends StatefulWidget {
@@ -11,26 +12,21 @@ class NationCard extends StatefulWidget {
 }
 
 class _NationCardState extends State<NationCard> {
-  bool _isHovering = false;
-
   @override
   Widget build(BuildContext context) {
-    return MouseRegion(
-      onEnter: (_) {
-        setState(() {
-          _isHovering = true;
-        });
-      },
-      onExit: (_) {
-        setState(() {
-          _isHovering = false;
-        });
+    return InkWell(
+      onTap: () {
+        Navigator.of(context).push(
+          MaterialPageRoute(
+            builder: (context) {
+              return NationDetail(nation: widget.nation);
+            },
+          ),
+        );
       },
       child: AnimatedContainer(
         duration: const Duration(milliseconds: 200),
         alignment: Alignment.center,
-        transform: Matrix4.identity()
-          ..scale(_isHovering ? 1.1 : 1.0),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),
           image: DecorationImage(

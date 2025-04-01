@@ -33,20 +33,7 @@ class _HomePageState extends State<HomePage> {
 
           itemCount: nations.length,
           itemBuilder: (context, index) {
-            return Card(
-              child: GestureDetector(
-                onTap: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (context) {
-                        return NationDetail(nation: nations[index]);
-                      },
-                    ),
-                  );
-                },
-                child: NationCard(nation: nations[index]),
-              ),
-            );
+            return Card(child: NationCard(nation: nations[index]));
           },
           // separatorBuilder: (context, index) {
           //   return const Divider();
