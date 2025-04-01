@@ -1,21 +1,11 @@
 import 'package:ebook_app/nation.dart';
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 class StoryPage extends StatelessWidget {
   const StoryPage({super.key, required this.nation});
 
   final Nation nation;
 
-  void _launchURL(String url) async {
-    final Uri uri = Uri.parse(url);
-    var canLaunchUrl2 = canLaunchUrl(uri);
-    if (await canLaunchUrl2) {
-      await launchUrl(uri);
-    } else {
-      throw '無法打開 $url';
-    }
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -39,9 +29,6 @@ class StoryPage extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     InkWell(
-                      onTap: () {
-                        _launchURL('https://reurl.cc/W0rZbk');
-                      },
                       child: Text(
                         '現任神明',
                         style: TextStyle(
