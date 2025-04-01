@@ -1,5 +1,6 @@
 import 'package:ebook_app/nation.dart';
 import 'package:ebook_app/items/nation_data.dart';
+import 'package:ebook_app/pages/subpages/story_page.dart';
 import 'package:flutter/material.dart';
 
 class NationDetail extends StatefulWidget {
@@ -40,70 +41,8 @@ class _NationDetailState extends State<NationDetail> {
             Expanded(
               child: TabBarView(
                 children: [
-                  Container(
-                    color: Colors.white,
-                    child: SingleChildScrollView(
-                      padding: const EdgeInsets.all(16.0),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.stretch,
-                        children: [
-                          Card(
-                            color: Colors.white,
-                            elevation: 4,
-                            margin: const EdgeInsets.only(bottom: 16.0),
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(12),
-                            ),
-                            child: Padding(
-                              padding: const EdgeInsets.all(16.0),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  const Text(
-                                    '國家特色',
-                                    style: TextStyle(
-                                      fontSize: 18.0,
-                                      fontWeight: FontWeight.bold,
-                                    ),
-                                  ),
-                                  const SizedBox(height: 8.0),
-                                  Text('widget.nation.nationStory'),
-                                ],
-                              ),
-                            ),
-                          ),
-
-                          Card(
-                            color: Colors.white,
-                            elevation: 4,
-                            margin: const EdgeInsets.only(bottom: 16.0),
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(12),
-                            ),
-                            child: Padding(
-                              padding: const EdgeInsets.all(16.0),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  const Text(
-                                    '現任神明',
-                                    style: TextStyle(
-                                      fontSize: 18.0,
-                                      fontWeight: FontWeight.bold,
-                                    ),
-                                  ),
-                                  const SizedBox(height: 8.0),
-                                  Text(widget.nation.god),
-                                ],
-                              ),
-                            ),
-
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-
+                  // 故事
+                  StoryPage(nation: widget.nation),
 
                 // 節日
                   Container(

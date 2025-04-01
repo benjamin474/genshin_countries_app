@@ -4,7 +4,7 @@ class Nation {
   final String god;
   final String nationElement;
   final String mainCity;
-  final List<String> nationStory;
+  final String nationStory;
   final List<String> gods;
   final List<String> festivals;
 
@@ -13,8 +13,8 @@ class Nation {
     required this.flag,
     required this.god,
     required this.nationElement,
-    required this.nationStory,
     required this.mainCity,
+    required this.nationStory,
     required this.gods,
     required this.festivals,
   });
