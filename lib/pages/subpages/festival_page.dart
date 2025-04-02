@@ -21,6 +21,12 @@ class Festival extends StatelessWidget {
     final festivals = nation.festivals;
 
     return Container(
+      decoration: BoxDecoration(
+        image: DecorationImage(
+          image: AssetImage(nation.mainCity),
+          fit: BoxFit.cover,
+        ),
+      ),
       child: ListView.separated(
         padding: const EdgeInsets.all(16),
         itemCount: festivals.length,
