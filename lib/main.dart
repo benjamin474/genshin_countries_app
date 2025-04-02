@@ -1,4 +1,5 @@
 import 'package:ebook_app/pages/home_page.dart';
+import 'package:ebook_app/pages/intro_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blueGrey,        
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const HomePage(),
+      home: const IntroPage(),
       debugShowCheckedModeBanner: false,
     );
   }
