@@ -7,7 +7,7 @@ class Nation {
   final String nationStory;
   final List<String> areaNames;
   final List<String> areaImages;
-  final List<String> festivals;
+  final List<Map<String,String>> festivals;
 
   const Nation({
     required this.name,

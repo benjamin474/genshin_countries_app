@@ -6,11 +6,15 @@ class StoryPage extends StatelessWidget {
 
   final Nation nation;
 
-
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: const Color.fromARGB(255, 139, 73, 73),
+      decoration: BoxDecoration(
+        image: DecorationImage(
+          image: AssetImage(nation.mainCity),
+          fit: BoxFit.cover,
+        ),
+      ),
       child: SingleChildScrollView(
         padding: const EdgeInsets.all(16.0),
         child: Column(

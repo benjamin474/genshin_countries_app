@@ -14,8 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: '原神六國導覽',
       theme: ThemeData(
-        primarySwatch: Colors.blueGrey,
-        
+        primarySwatch: Colors.blueGrey,        
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
       home: const HomePage(),

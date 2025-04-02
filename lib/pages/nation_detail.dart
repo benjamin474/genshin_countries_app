@@ -1,6 +1,6 @@
 import 'package:ebook_app/nation.dart';
 import 'package:ebook_app/pages/subpages/area_page.dart';
-import 'package:ebook_app/pages/subpages/festival.dart';
+import 'package:ebook_app/pages/subpages/festival_page.dart';
 import 'package:ebook_app/pages/subpages/story_page.dart';
 import 'package:flutter/material.dart';
 
@@ -18,22 +18,22 @@ class _NationDetailState extends State<NationDetail> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text(widget.nation.name)),
-      body: DefaultTabController(
+      body:  DefaultTabController(
         length: 3,
         child: Column(
           children: [
             Image.asset(widget.nation.flag),
             Container(
-              color: Colors.white,
+              color: Colors.grey[700],
               child: TabBar(
                 tabs: [
                   Tab(text: "關於${widget.nation.name}"),
                   Tab(text: "地區"),
                   Tab(text: "節日"),
                 ],
-                labelColor: Colors.black,
-                unselectedLabelColor: Colors.grey,
-                indicatorColor: Colors.amber,
+                labelColor: Colors.yellow[50],
+                unselectedLabelColor: Colors.white,
+                indicatorColor: Colors.yellow,
               ),
             ),
             Expanded(
