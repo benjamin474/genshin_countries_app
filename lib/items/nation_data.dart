@@ -20,7 +20,7 @@ const List<Nation> nations = [
     festivals: [
       {
         "羽球節":
-            "https://bbs.mihoyo.com/ys/obc/content/390/detail?bbs_presentation_style=no_header&visit_device=pc",
+            "https://genshin.hoyoverse.com/zh-tw/town/mondstadt?noteId=104895",
       },
       {"風花節": "https://genshin.hoyoverse.com/zh-tw/news/detail/105494"},
       {
