@@ -27,9 +27,9 @@ class _NationCardState extends State<NationCard> {
             ),
           );
         },
-        child: AnimatedContainer(
-          duration: const Duration(milliseconds: 200),
-          alignment: Alignment.center,
+
+        // 背景圖片
+        child: Ink(
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(10),
             image: DecorationImage(
@@ -37,6 +37,16 @@ class _NationCardState extends State<NationCard> {
               fit: BoxFit.cover,
             ),
           ),
+
+          // child: Container(
+          //   alignment: Alignment.center,
+          //   decoration: BoxDecoration(
+          //     borderRadius: BorderRadius.circular(10),
+          //     image: DecorationImage(
+          //       image: AssetImage(widget.nation.mainCity),
+          //       fit: BoxFit.cover,
+          //     ),
+          //   ),
           child: Container(
             padding: const EdgeInsets.all(8.0),
             margin: const EdgeInsets.only(bottom: 10),
