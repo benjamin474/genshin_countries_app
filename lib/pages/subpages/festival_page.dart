@@ -20,9 +20,8 @@ class Festival extends StatelessWidget {
   Widget build(BuildContext context) {
     final festivals = nation.festivals;
 
-    return Scaffold(
-      appBar: AppBar(title: Text("${nation.name}的節日活動")),
-      body: ListView.separated(
+    return Container(
+      child: ListView.separated(
         padding: const EdgeInsets.all(16),
         itemCount: festivals.length,
         itemBuilder: (context, index) {
