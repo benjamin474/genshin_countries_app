@@ -23,7 +23,7 @@ class NationTile extends StatelessWidget {
             nation.name,
             style: TextStyle(
               color: Colors.white,
-              fontSize: 20.0,
+              fontSize: 18.0,
               fontWeight: FontWeight.bold,
             ),
           ),
