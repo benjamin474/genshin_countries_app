@@ -44,7 +44,7 @@ class _NationDetailState extends State<NationDetail> {
                   // 地區
                   AreaPage(nation: widget.nation),
                   // 節日
-                  Festival(nation: widget.nation),
+                  FestivalPage(nation: widget.nation),
                 ],
               ),
             ),

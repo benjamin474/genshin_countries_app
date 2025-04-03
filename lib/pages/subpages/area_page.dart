@@ -18,7 +18,7 @@ class AreaPage extends StatelessWidget {
         padding: const EdgeInsets.all(8.0),
         itemCount: nation.areaImages.length,
         itemBuilder: (context, index) {
-          return Card(
+          return Card(            
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(12),
             ),
